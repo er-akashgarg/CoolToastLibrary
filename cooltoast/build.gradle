@@ -1,13 +1,28 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
+//group = 'com.akashgarg.cooltoastlibrary' // Change this to match your package name
+//version = '1.0.0'
 
+publish {
 
-group = 'com.akashgarg.cooltoastlibrary' // Change this to match your package name
- version = '1.0.0'
+    def groupProjectID = 'com.akashgarg.cooltoastlibrary'
+    def artifactProjectID = 'cooltoast'
+    def publishVersionID = '1.0'
+
+    userOrg = 'akashgarg'
+    repoName = 'CoolToast'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'CoolToast is like a Toast with cutom UI for android app.'
+    website = 'https://github.com/er-akashgarg/CoolToastLibrary'
+
+}
 
 android {
     compileSdkVersion 28
@@ -23,7 +38,7 @@ android {
     }
 
     buildTypes {
-        debug{
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
