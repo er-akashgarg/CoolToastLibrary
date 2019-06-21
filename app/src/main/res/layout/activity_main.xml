@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/custom_toast_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_transparent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="@dimen/_8sdp">
+
+    <Button
+            android:id="@+id/btnSuccessToast"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/success_toast"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_7sdp"
+            android:background="@color/colorAccent"/>
+
+    <Button
+            android:id="@+id/btnErrorToast"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/error_toast"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_7sdp"
+            android:background="@color/colorAccent"/>
+
+
+    <Button
+            android:id="@+id/btnCustomToast"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/error_toast"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_7sdp"
+            android:background="@color/colorAccent"/>
+
+</LinearLayout>
