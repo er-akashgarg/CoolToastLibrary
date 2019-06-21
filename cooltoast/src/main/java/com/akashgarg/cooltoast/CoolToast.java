@@ -65,11 +65,10 @@ public class CoolToast extends AppCompatActivity {
                 (ViewGroup) activity.findViewById(R.id.custom_toast_container), false);
         text = view.findViewById(R.id.header1);
         text.setText(message);
-        text.setTextColor(textColorCode);
+//        text.setTextColor(textColorCode);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            view.setBackground(activity.getDrawable(R.drawable.success_corner));
-            view.setBackgroundColor(backgroundColorCode);
+            view.setBackground(activity.getDrawable(R.drawable.custom_corner));
         }
 
         toast.setView(view);

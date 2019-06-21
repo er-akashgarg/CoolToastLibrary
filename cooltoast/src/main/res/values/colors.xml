@@ -7,5 +7,6 @@
     <color name="white">#FFF</color>
     <color name="success_color">#32C72B</color>
     <color name="error_color">#D52A17</color>
+    <color name="gray">#5F5D5D</color>
 
 </resources>

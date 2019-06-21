@@ -12,20 +12,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnSuccessToast.setOnClickListener {
-            CoolToast.successToast(this, "Success Toast!")
+            CoolToast.successToast(this, "  Success Toast!  ")
                 .setPadding(10)
                 .setTextSize(18f)
 
         }
 
         btnErrorToast.setOnClickListener {
-            CoolToast.errorToast(this, "Error Toast!")
+            CoolToast.errorToast(this, "  Error Toast!  ")
                 .setPadding(10)
                 .setTextSize(18f)
         }
 
         btnCustomToast.setOnClickListener {
-            CoolToast.customToast(this, "Error Toast!", R.color.colorAccent, R.color.black)
+            CoolToast.customToast(this, "  Custom Toast!  ", R.color.colorAccent, R.color.white)
                 .setPadding(10)
                 .setTextSize(18f)
         }

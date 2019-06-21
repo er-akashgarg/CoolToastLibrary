@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="horizontal"
-              android:padding="@dimen/_8sdp">
+              android:padding="@dimen/_7sdp">
 
     <TextView
             android:id="@+id/header1"
@@ -13,7 +13,7 @@
             android:padding="@dimen/_6sdp"
             android:textStyle="bold"
             android:gravity="center"
-            android:text="Aaaaaaaaa"
+            android:text="toast"
             android:background="@color/colorAccent"
             android:textColor="@color/white"
             android:textSize="@dimen/_18sdp"/>
